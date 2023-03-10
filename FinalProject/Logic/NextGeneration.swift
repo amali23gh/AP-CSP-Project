@@ -6,8 +6,3 @@
 //
 
 import Foundation
-
-var popGeneA = Array(repeating: Array(repeating: 0, count: 2), count: 3)
-    
-    
-print(popGeneA)
