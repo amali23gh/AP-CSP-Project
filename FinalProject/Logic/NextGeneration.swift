@@ -5,7 +5,7 @@
 //  Created by Theo Fechtmeyer23 on 3/10/23.
 //
 
-import function
+import Foundation
 
 func NextGen(startPop: [[Int]], fertility: Int, monogamy: Bool) -> [[Int]]{
     var malePop: [[Int]] = []
