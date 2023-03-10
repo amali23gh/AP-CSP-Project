@@ -7,4 +7,7 @@
 
 import Foundation
 
-var popGene1: Int[][] = [0,0,0]
+var popGeneA = Array(repeating: Array(repeating: 0, count: 2), count: 3)
+    
+    
+print(popGeneA)
