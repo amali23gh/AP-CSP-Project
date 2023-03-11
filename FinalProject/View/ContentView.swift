@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    var currentGen: Int = 0
     var body: some View {
-       Text("hi")
+        Text("hi")
     }
 }
 

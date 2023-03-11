@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ButtonComponent_: View {
-    var text: String = "Select List"
+struct ButtonComponent: View {
+    var text: String
     var background: Color  = Color(red: 0.99, green: 0.96, blue: 0.84)
     var body: some View {
     
@@ -22,8 +22,8 @@ struct ButtonComponent_: View {
     }
 }
 
-struct ButtonComponent__Previews: PreviewProvider {
+struct ButtonComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonComponent_()
+        ButtonComponent(text: "hi")
     }
 }
