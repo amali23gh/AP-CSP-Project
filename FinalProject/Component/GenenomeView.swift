@@ -23,7 +23,7 @@ struct GenenomeView: View {
                 }
                     .padding(.horizontal)
         }
-            .frame(maxHeight: 300)
+            .frame(maxHeight: 450)
    
                     
     }else{
@@ -34,6 +34,6 @@ struct GenenomeView: View {
 
 struct GenenomeView_Previews: PreviewProvider {
     static var previews: some View {
-        GenenomeView(pop: RandomPopCreator(size: 40))
+        GenenomeView(pop: RandomPopCreator(size: 80))
     }
 }

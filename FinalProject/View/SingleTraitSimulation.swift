@@ -68,29 +68,33 @@ struct SingleTraitSimulation: View {
                 }
             ButtonComponent(text: "Generate The \(genNum+1)\(Suffix(num: genNum+1)) Generation")
                 .onTapGesture{
-                    if startNum > 0{
+                    if startNum > 0 {
                         if genNum == 0 {
                             population = RandomPopCreator(size: startNum)
-                        }else if genNum > 0{
+                            genNum += 1
+                        }else if genNum > 0 && population.count > 0{
                             population = NextGen(startPop: population, fertility: fertility, monogamy: monogomy, numOfKid: numOfKid)
+                            genNum += 1
+                            if population.count < 1 {
+                                genNum = 0
+                            }
                         }
-                        genNum += 1
                     }
                 }
             
         }
-            .frame(width:400, height: 300)
+            .frame(width:400, height: 350)
             .background(Color(red: 0.90, green: 0.80, blue: 0.84))
             .offset(y:-240)
             .ignoresSafeArea()
             ScrollView{
                     GenenomeView(pop: population)
                 }
-            .offset(y:300)
-            
-
-            
-            
+            .offset(y:320)
+            if population.count > 0{
+                Text("Population: \(population.count) ")
+                    .offset( y:-85)
+            }
         }
     }
 }
