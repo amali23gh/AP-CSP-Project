@@ -27,7 +27,7 @@ struct SingleTraitSimulation: View {
                         .frame(height: 10)
                     HStack{
                         Spacer()
-                            .frame(width:40)
+                            .frame(width:20)
                         VStack(spacing: 20){
                             VStack(spacing:2){
                                 Text("Starting \n Population")
@@ -108,9 +108,13 @@ struct SingleTraitSimulation: View {
                         .frame(width:120,height: 200)
                         .background(Color(red: 0.99, green: 0.96, blue: 0.84))
                         .cornerRadius(10)
+                        Spacer()
+                            .frame(width: 20)
+                        
                     }
                     Spacer()
                         .frame(height: 10)
+                    
                 }
                 .background(Color(red: 0.90, green: 0.70, blue: 0.76))
                 .shadow(radius: 10)
