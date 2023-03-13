@@ -146,7 +146,7 @@ struct SingleTraitSimulation: View {
             .offset(y:-240)
             .ignoresSafeArea()
             ScrollView{
-                    GenenomeView(pop: population,hight: 400)
+                    GenenomeView(pop: population,hight: 380)
                 }
             .offset(y:360)
             if population.count > 0{
