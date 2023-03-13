@@ -17,6 +17,8 @@ struct GenenomeView: View {
         if pop.count != 0 {
             
         ScrollView {
+            Spacer()
+                .frame(height:10)
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach((0...pop.count-1),id: \.self){index in
                         GeneImageSelect(person: pop[index])

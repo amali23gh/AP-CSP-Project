@@ -148,10 +148,10 @@ struct SingleTraitSimulation: View {
             ScrollView{
                     GenenomeView(pop: population,hight: 400)
                 }
-            .offset(y:370)
+            .offset(y:360)
             if population.count > 0{
                 Text("Population: \(population.count) ")
-                    .offset( y:-32)
+                    .offset( y:-34)
             }
         }
     }
