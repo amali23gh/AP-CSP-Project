@@ -13,6 +13,7 @@
 		A63F2E4829BBA0DC0075DC84 /* GenenomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E4729BBA0DC0075DC84 /* GenenomeView.swift */; };
 		A63F2E4C29BBB5980075DC84 /* SingleTraitSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */; };
 		A63F2E5029BBBB1C0075DC84 /* Suffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */; };
+		A63F2E5829BED85E0075DC84 /* Selective_Pressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E5729BED85E0075DC84 /* Selective_Pressure.swift */; };
 		FB2BD84229BBB25F0094A460 /* ButtonComponent .swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */; };
 		FB78F42829BB7C05009D049B /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42729BB7C05009D049B /* FinalProjectApp.swift */; };
 		FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42929BB7C05009D049B /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 		A63F2E4729BBA0DC0075DC84 /* GenenomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenenomeView.swift; sourceTree = "<group>"; };
 		A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTraitSimulation.swift; sourceTree = "<group>"; };
 		A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suffix.swift; sourceTree = "<group>"; };
+		A63F2E5729BED85E0075DC84 /* Selective_Pressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selective_Pressure.swift; sourceTree = "<group>"; };
 		FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonComponent .swift"; sourceTree = "<group>"; };
 		FB78F42429BB7C05009D049B /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB78F42729BB7C05009D049B /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
@@ -49,9 +51,8 @@
 		A63F2E2529BB7DCA0075DC84 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				A63F2E2829BB7E7B0075DC84 /* NextGeneration.swift */,
-				A63F2E4029BB86B90075DC84 /* RandomPopCreator.swift */,
 				A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */,
+				A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -70,6 +71,16 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				A63F2E4029BB86B90075DC84 /* RandomPopCreator.swift */,
+				A63F2E2829BB7E7B0075DC84 /* NextGeneration.swift */,
+				A63F2E5729BED85E0075DC84 /* Selective_Pressure.swift */,
+			);
+			path = SIngleTraitSimulationLogic;
 			sourceTree = "<group>";
 		};
 		FB2BD84029BBB24A0094A460 /* Component */ = {
@@ -195,6 +206,7 @@
 				FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */,
 				A63F2E4829BBA0DC0075DC84 /* GenenomeView.swift in Sources */,
 				A63F2E4129BB86B90075DC84 /* RandomPopCreator.swift in Sources */,
+				A63F2E5829BED85E0075DC84 /* Selective_Pressure.swift in Sources */,
 				FB78F42829BB7C05009D049B /* FinalProjectApp.swift in Sources */,
 				A63F2E2929BB7E7B0075DC84 /* NextGeneration.swift in Sources */,
 				FB2BD84229BBB25F0094A460 /* ButtonComponent .swift in Sources */,

@@ -14,61 +14,108 @@ struct SingleTraitSimulation: View {
     @State var monogomy: Bool = true
     @State var numOfKid: Int = 2
     @State var fertility: Int = 100
+    @State var recessiveSurvival: Int = 100
+    @State var DominantSurvival: Int = 100
+    @State var carrierSurvival: Int = 100
     var body: some View{
         ZStack{
             VStack{
-                HStack{
-                    VStack(spacing:2){
-                        Text("Starting \n Population")
-                            .multilineTextAlignment(TextAlignment.center)
-                        TextField("", value: $startNum, format: .number)
-                            .frame(width: 100)
-                            .textFieldStyle(.roundedBorder)
-                        
+                ScrollView(.horizontal){
+                    Spacer()
+                        .frame(height: 10)
+                    HStack{
+                        Spacer()
+                            .frame(width:40)
+                        VStack(spacing: 20){
+                            VStack(spacing:2){
+                                Text("Starting \n Population")
+                                    .multilineTextAlignment(TextAlignment.center)
+                                TextField("", value: $startNum, format: .number)
+                                    .frame(width: 100)
+                                    .textFieldStyle(.roundedBorder)
+                                
+                            }
+                            .frame(width:120,height: 100)
+                            .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                            .cornerRadius(10)
+                            .shadow(radius: 10)
+                            VStack{
+                                Text("Monogomy")
+                                    .multilineTextAlignment(TextAlignment.center)
+                                Toggle("Monogomy", isOn: $monogomy).labelsHidden()
+                                
+                            }
+                            .frame(width:120,height: 80)
+                            .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                            .cornerRadius(10)
+                        }
+                        VStack{
+                            VStack(spacing:2){
+                                Text("Average\nAmount of Kids")
+                                    .multilineTextAlignment(TextAlignment.center)
+                                TextField("", value: $numOfKid, format: .number)
+                                    .frame(width: 100)
+                                    .textFieldStyle(.roundedBorder)
+                            }
+                            .frame(width:120,height: 100)
+                            .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                            .cornerRadius(10)
+                            .shadow(radius: 10)
+                            VStack(spacing:2){
+                                Text("% Fertility")
+                                    .multilineTextAlignment(TextAlignment.center)
+                                TextField("", value: $fertility, format: .number)
+                                    .frame(width: 100)
+                                    .textFieldStyle(.roundedBorder)
+                                
+                            }
+                            .frame(width:120,height: 100)
+                            .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                            .cornerRadius(10)
+                        }
+                        VStack{
+                            Text("% Survival\nof\nHomozygous\nDominant")
+                                .multilineTextAlignment(TextAlignment.center)
+                            TextField("", value: $DominantSurvival, format: .number)
+                                .frame(width: 100)
+                                .textFieldStyle(.roundedBorder)
+                            
+                        }
+                        .frame(width:120,height: 200)
+                        .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                        .cornerRadius(10)
+                        VStack{
+                            Text("% Survival\nof\nHomozygous\nrecessive")
+                                .multilineTextAlignment(TextAlignment.center)
+                            TextField("", value: $recessiveSurvival, format: .number)
+                                .frame(width: 100)
+                                .textFieldStyle(.roundedBorder)
+                            
+                        }
+                        .frame(width:120,height: 200)
+                        .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                        .cornerRadius(10)
+                        VStack{
+                            Text("% Survival\nof\nHeterozygous\nDominant")
+                                .multilineTextAlignment(TextAlignment.center)
+                            TextField("", value: $carrierSurvival, format: .number)
+                                .frame(width: 100)
+                                .textFieldStyle(.roundedBorder)
+                            
+                        }
+                        .frame(width:120,height: 200)
+                        .background(Color(red: 0.99, green: 0.96, blue: 0.84))
+                        .cornerRadius(10)
                     }
-                    .frame(width:120,height: 100)
-                    .background(Color(red: 0.99, green: 0.96, blue: 0.84))
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
-                    VStack{
-                        Text("Monogomy")
-                            .multilineTextAlignment(TextAlignment.center)
-                        Toggle("Monogomy", isOn: $monogomy).labelsHidden()
-                        
-                    }
-                    .frame(width:120,height: 80)
-                    .background(Color(red: 0.99, green: 0.96, blue: 0.84))
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
+                    Spacer()
+                        .frame(height: 10)
                 }
-                HStack{
-                    VStack(spacing:2){
-                        Text("Average\nAmount of Kids")
-                            .multilineTextAlignment(TextAlignment.center)
-                        TextField("", value: $numOfKid, format: .number)
-                            .frame(width: 100)
-                            .textFieldStyle(.roundedBorder)
-                    }
-                    .frame(width:120,height: 100)
-                    .background(Color(red: 0.99, green: 0.96, blue: 0.84))
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
-                    VStack(spacing:2){
-                        Text("% Fertility")
-                            .multilineTextAlignment(TextAlignment.center)
-                        TextField("", value: $fertility, format: .number)
-                            .frame(width: 100)
-                            .textFieldStyle(.roundedBorder)
-                        
-                    }
-                    .frame(width:120,height: 100)
-                    .background(Color(red: 0.99, green: 0.96, blue: 0.84))
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
-                }
+                .background(Color(red: 0.90, green: 0.70, blue: 0.76))
+                .shadow(radius: 10)
             ButtonComponent(text: "Generate The \(genNum+1)\(Suffix(num: genNum+1)) Generation")
                 .onTapGesture{
                     if startNum > 0 {
+                        
                         if genNum == 0 {
                             population = RandomPopCreator(size: startNum)
                             genNum += 1
@@ -81,19 +128,28 @@ struct SingleTraitSimulation: View {
                         }
                     }
                 }
+            ButtonComponent(text: "Apply Selective Pressure")
+                    .onTapGesture {
+                        if population.count > 0{
+                            population = SelectivePresure(pop: population, domSurvive: DominantSurvival, recSurvive: recessiveSurvival, carrySurvive: carrierSurvival)
+                            if population.count == 0{
+                                genNum = 0
+                            }
+                        }
+                    }
             
         }
-            .frame(width:400, height: 350)
+            .frame(width:400, height: 410)
             .background(Color(red: 0.90, green: 0.80, blue: 0.84))
             .offset(y:-240)
             .ignoresSafeArea()
             ScrollView{
-                    GenenomeView(pop: population)
+                    GenenomeView(pop: population,hight: 400)
                 }
-            .offset(y:320)
+            .offset(y:370)
             if population.count > 0{
                 Text("Population: \(population.count) ")
-                    .offset( y:-85)
+                    .offset( y:-48)
             }
         }
     }

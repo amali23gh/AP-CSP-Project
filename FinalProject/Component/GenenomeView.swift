@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GenenomeView: View {
     let pop: [[Int]]
+    let hight: CGFloat
     var body: some View {
     let columns = [
             GridItem(.adaptive(minimum: 80))
@@ -23,7 +24,7 @@ struct GenenomeView: View {
                 }
                     .padding(.horizontal)
         }
-            .frame(maxHeight: 450)
+            .frame(maxHeight: hight)
    
                     
     }else{
@@ -34,6 +35,6 @@ struct GenenomeView: View {
 
 struct GenenomeView_Previews: PreviewProvider {
     static var previews: some View {
-        GenenomeView(pop: RandomPopCreator(size: 80))
+        GenenomeView(pop: RandomPopCreator(size: 80), hight: 400)
     }
 }
