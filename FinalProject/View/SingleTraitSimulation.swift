@@ -20,6 +20,8 @@ struct SingleTraitSimulation: View {
     var body: some View{
         ZStack{
             VStack{
+                Spacer()
+                    .frame(height: 40)
                 ScrollView(.horizontal){
                     Spacer()
                         .frame(height: 10)
@@ -139,7 +141,7 @@ struct SingleTraitSimulation: View {
                     }
             
         }
-            .frame(width:400, height: 410)
+            .frame(width:400, height: 440)
             .background(Color(red: 0.90, green: 0.80, blue: 0.84))
             .offset(y:-240)
             .ignoresSafeArea()
@@ -149,7 +151,7 @@ struct SingleTraitSimulation: View {
             .offset(y:370)
             if population.count > 0{
                 Text("Population: \(population.count) ")
-                    .offset( y:-48)
+                    .offset( y:-32)
             }
         }
     }
