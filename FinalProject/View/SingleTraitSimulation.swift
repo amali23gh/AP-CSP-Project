@@ -43,9 +43,9 @@ struct SingleTraitSimulation: View {
                                 .cornerRadius(10)
                                 .shadow(radius: 10)
                                 VStack{
-                                    Text("Monogomy")
+                                    Text("Monogamy")
                                         .multilineTextAlignment(TextAlignment.center)
-                                    Toggle("Monogomy", isOn: $monogomy).labelsHidden()
+                                    Toggle("Monogajmy", isOn: $monogomy).labelsHidden()
                                     
                                 }
                                 .frame(width:120,height: 80)
