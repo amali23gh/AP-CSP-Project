@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var simulationStart: Bool = false
     @State var simulationSTS: Bool = false
-    
+    @State var button: Bool = true
     var body: some View {
         
         NavigationView {
@@ -22,12 +22,13 @@ struct ContentView: View {
                             .font(.title)
                             .fontWeight(.bold)
                         
-                        
-                        ButtonComponent(text: "Let's Begin")
-                            .onTapGesture{
-                                simulationStart.toggle()
-                            }
-                        
+                        if button == true{
+                            ButtonComponent(text: "Let's Begin")
+                                .onTapGesture{
+                                    simulationStart.toggle()
+                                    button = false
+                                }
+                        }
                         if simulationStart == true {
                             VStack {
                                 ZStack {
