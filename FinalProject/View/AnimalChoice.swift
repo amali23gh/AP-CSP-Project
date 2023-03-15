@@ -24,12 +24,17 @@ struct AnimalChoice: View {
                 
                 HStack {
                     
-                    DecisionBox(animalName: "Animi")
+                    DecisionBox(animalName: "Vulture")
                     
-                    DecisionBox(animalName: "Animal 4")
+                    DecisionBox(animalName: "Meerkat")
                     
                 }
                 
+                HStack  {
+                    
+                    DecisionBox(animalName: "Hyena")
+                    
+                }
                 
             }
         } .frame(maxWidth: .infinity, maxHeight: .infinity)

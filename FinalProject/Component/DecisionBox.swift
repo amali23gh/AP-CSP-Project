@@ -10,6 +10,7 @@ import SwiftUI
 struct DecisionBox: View {
     
     var animalName: String
+  //  var offset: CGFloat
     
     var body: some View {
         
@@ -21,17 +22,14 @@ struct DecisionBox: View {
                .frame(width:100,height:20)
                 .offset(y: -65)
                 .foregroundColor(.black)
-                .padding(55)
     
                //  .frame(width: 100, height, 100)
            Image(animalName)
-               .frame(width: 1, height: 1)
-               .padding(60)
-               .padding(.horizontal)
+               .resizable()
+               .scaledToFit()
+               .frame(height:125)
                .cornerRadius(30)
-               .offset(y:10)
-               
-           
+               .offset(y: 10)
             
            
         }
