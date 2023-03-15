@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State var simulationStart: Bool = false
-       @State var simulationSTS: Bool = false
+    @State var simulationSTS: Bool = false
        
        var body: some View {
         
@@ -45,9 +46,7 @@ struct ContentView: View {
                                                
                                                    }
                                                
-                                               
                                            } .padding()
-                                           
                                            
                                            if simulationSTS == true {
                                                Text(" - Simulates Natural Selection of                Single Trait Dominance")
@@ -71,7 +70,7 @@ struct ContentView: View {
                                            Image(systemName:"arrowshape.turn.up.right.fill")
                                                .foregroundColor(.gray)
                                            
-                                           Text(" Simulation 2   ")
+                                           Text(" Prisoner's Dilemma ")
                                                .font(.title2)
                                                .foregroundColor(.gray)
                                            }
