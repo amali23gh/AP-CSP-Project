@@ -10,6 +10,7 @@ import SwiftUI
 struct DecisionBox: View {
     
     var animalName: String
+    var color: Color
   //  var offset: CGFloat
     
     var body: some View {
@@ -35,7 +36,7 @@ struct DecisionBox: View {
         }
        .frame(width: 175, height: 150)
        .padding(5)
-       .background(.gray)
+       .background(color)
        .cornerRadius(15)
        .shadow(radius: 15)
     }
@@ -43,6 +44,6 @@ struct DecisionBox: View {
 
 struct DecisionBox_Previews: PreviewProvider {
     static var previews: some View {
-        DecisionBox(animalName: "Zebra")
+        DecisionBox(animalName: "Zebra", color: .gray)
     }
 }

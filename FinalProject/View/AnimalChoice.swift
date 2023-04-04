@@ -8,44 +8,77 @@
 import SwiftUI
 
 struct AnimalChoice: View {
-    var body: some View {
+    
+    @State var meerkatProb: [Int] = Prob.meerkatProb
+    @State var zebraProb: [Int] = Prob.zebraProb
+    @State var lionProb: [Int] = Prob.lionProb
+    @State var hyenaProb: [Int] = Prob.lionProb
+    @State var vultureProb: [Int] = Prob.vultureProb
+    
+    @State var zebraBool: Bool = false
+    @State var lionBool: Bool = false
+    @State var vultureBool: Bool = false
+    @State var meerkatBool: Bool = false
+    @State var hyenaBool: Bool = false
+    
+    
         
-        ZStack {
-            VStack{
-                Text("Select Two Animals:")
-                
+        
+        var body: some View {
             
-                HStack {
+            ZStack {
+                VStack{
+                    Text("Animal Selection")
+                        .font(.title)
+                        .fontWeight(.bold)
                     
-                    DecisionBox(animalName: "Zebra")
-                    
-                    DecisionBox(animalName: "Lion")
-                }
-                
-                HStack {
-                    
-                    DecisionBox(animalName: "Vulture")
-                    
-                    DecisionBox(animalName: "Meerkat")
-                    
-                }
-                
+                    HStack {
+                        DecisionBox(animalName: "Zebra", color: AnimalBoxColor(color: zebraBool))
+                            .onTapGesture {
+                                zebraBool.toggle()
+                            }
+       
+                        DecisionBox(animalName: "Lion", color: AnimalBoxColor(color: lionBool))
+                            .onTapGesture {
+                                lionBool.toggle()
+                            }
+                    }
+                    HStack {
+                        DecisionBox(animalName: "Vulture", color: AnimalBoxColor(color: vultureBool))
+                            .onTapGesture {
+                                vultureBool.toggle()
+                            }
+                        DecisionBox(animalName: "Meerkat", color: AnimalBoxColor(color: meerkatBool))
+                            .onTapGesture {
+                                meerkatBool.toggle()
+                            }
+                    }
                 HStack  {
-                    
-                    DecisionBox(animalName: "Hyena")
-                    
+                        DecisionBox(animalName: "Hyena", color: AnimalBoxColor(color: hyenaBool))
+                            .onTapGesture {
+                                hyenaBool.toggle()
+                            }
+                    }
+
                 }
                 
-            }
-        } .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding()
-            .ignoresSafeArea()
-            .background(Color(red: 0.91, green: 0.76, blue: 0.66))
+                    
+                    AnimalPage(animalOne: zebraBool, animalTwo: lionBool, animalThree: hyenaBool, animalFour: vultureBool, animalFive: meerkatBool)
+                
+                
+            } .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding()
+                .ignoresSafeArea()
+                .background(Color(red: 0.91, green: 0.76, blue: 0.66))
+            
+           
+            
+        }
     }
-}
+    
+    struct AnimalChoice_Previews: PreviewProvider {
+        static var previews: some View {
+            AnimalChoice()
+        }
+    }
 
-struct AnimalChoice_Previews: PreviewProvider {
-    static var previews: some View {
-        AnimalChoice()
-    }
-}

@@ -17,6 +17,11 @@
 		FB2BD84229BBB25F0094A460 /* ButtonComponent .swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */; };
 		FB2BD84B29BF5FA00094A460 /* DecisionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84A29BF5FA00094A460 /* DecisionBox.swift */; };
 		FB2BD84D29C003870094A460 /* AnimalChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84C29C003870094A460 /* AnimalChoice.swift */; };
+		FB7536DB29DA1E330012E5C6 /* AnimalDecisionProbability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536DA29DA1E330012E5C6 /* AnimalDecisionProbability.swift */; };
+		FB7536DF29DA3CDE0012E5C6 /* AnimalConditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */; };
+		FB7536E129DA3E2F0012E5C6 /* Probability Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */; };
+		FB7536E329DA76D30012E5C6 /* AnimalChoiceFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536E229DA76D30012E5C6 /* AnimalChoiceFunction.swift */; };
+		FB7536E729DCC9050012E5C6 /* AnimalProbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */; };
 		FB78F42829BB7C05009D049B /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42729BB7C05009D049B /* FinalProjectApp.swift */; };
 		FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42929BB7C05009D049B /* ContentView.swift */; };
 		FB78F42C29BB7C07009D049B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB78F42B29BB7C07009D049B /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 		FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonComponent .swift"; sourceTree = "<group>"; };
 		FB2BD84A29BF5FA00094A460 /* DecisionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionBox.swift; sourceTree = "<group>"; };
 		FB2BD84C29C003870094A460 /* AnimalChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalChoice.swift; sourceTree = "<group>"; };
+		FB7536DA29DA1E330012E5C6 /* AnimalDecisionProbability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDecisionProbability.swift; sourceTree = "<group>"; };
+		FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalConditional.swift; sourceTree = "<group>"; };
+		FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Probability Struct.swift"; sourceTree = "<group>"; };
+		FB7536E229DA76D30012E5C6 /* AnimalChoiceFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalChoiceFunction.swift; sourceTree = "<group>"; };
+		FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalProbView.swift; sourceTree = "<group>"; };
 		FB78F42429BB7C05009D049B /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB78F42729BB7C05009D049B /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		FB78F42929BB7C05009D049B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +78,7 @@
 				FB78F42929BB7C05009D049B /* ContentView.swift */,
 				A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */,
 				FB2BD84C29C003870094A460 /* AnimalChoice.swift */,
+				FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +114,10 @@
 		FB2BD84729BF5F320094A460 /* Prisoner's Dilemma */ = {
 			isa = PBXGroup;
 			children = (
+				FB7536DA29DA1E330012E5C6 /* AnimalDecisionProbability.swift */,
+				FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */,
+				FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */,
+				FB7536E229DA76D30012E5C6 /* AnimalChoiceFunction.swift */,
 			);
 			path = "Prisoner's Dilemma";
 			sourceTree = "<group>";
@@ -217,16 +232,21 @@
 			files = (
 				A63F2E4529BB9E5E0075DC84 /* GeneImageSelect.swift in Sources */,
 				A63F2E4C29BBB5980075DC84 /* SingleTraitSimulation.swift in Sources */,
+				FB7536E129DA3E2F0012E5C6 /* Probability Struct.swift in Sources */,
 				FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */,
 				FB2BD84B29BF5FA00094A460 /* DecisionBox.swift in Sources */,
+				FB7536DB29DA1E330012E5C6 /* AnimalDecisionProbability.swift in Sources */,
 				A63F2E4829BBA0DC0075DC84 /* GenenomeView.swift in Sources */,
 				A63F2E4129BB86B90075DC84 /* RandomPopCreator.swift in Sources */,
 				A63F2E5829BED85E0075DC84 /* Selective_Pressure.swift in Sources */,
+				FB7536E329DA76D30012E5C6 /* AnimalChoiceFunction.swift in Sources */,
+				FB7536DF29DA3CDE0012E5C6 /* AnimalConditional.swift in Sources */,
 				FB78F42829BB7C05009D049B /* FinalProjectApp.swift in Sources */,
 				A63F2E2929BB7E7B0075DC84 /* NextGeneration.swift in Sources */,
 				FB2BD84229BBB25F0094A460 /* ButtonComponent .swift in Sources */,
 				FB2BD84D29C003870094A460 /* AnimalChoice.swift in Sources */,
 				A63F2E5029BBBB1C0075DC84 /* Suffix.swift in Sources */,
+				FB7536E729DCC9050012E5C6 /* AnimalProbView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
