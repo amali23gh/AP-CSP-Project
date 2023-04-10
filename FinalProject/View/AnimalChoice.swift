@@ -62,9 +62,9 @@ struct AnimalChoice: View {
 
                 }
                 
-                    
+                NavigationLink(destination: AnimalProbView()) {
                     AnimalPage(animalOne: zebraBool, animalTwo: lionBool, animalThree: hyenaBool, animalFour: vultureBool, animalFive: meerkatBool)
-                
+                }
                 
             } .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding()
