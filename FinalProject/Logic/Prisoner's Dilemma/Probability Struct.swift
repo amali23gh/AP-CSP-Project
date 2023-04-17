@@ -19,6 +19,8 @@ struct Prob {
     static var lionBool: Bool = false
     static var zebraBool: Bool = false
     static var hyenaBool: Bool = false
-    static var vultureBool: Bool = false 
+    static var vultureBool: Bool = false
+    static var animalOne: String = " "
+    static var animmalTwo: String = " "
 
 }

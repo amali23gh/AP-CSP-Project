@@ -19,12 +19,11 @@ struct AnimalProbView: View {
     var body: some View {
        
         NavigationView {
+          
             ZStack {
+              
                 VStack {
                    
-                    
-                    
-                    
                     HStack {
                         DecisionBoxTwo(offsetVal: CGSize(width: -5, height: 0))
                         DecisionBoxTwo(offsetVal: CGSize(width:  5, height: 0))

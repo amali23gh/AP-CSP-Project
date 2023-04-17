@@ -39,3 +39,12 @@ func AnimalPage(animalOne: Bool, animalTwo: Bool, animalThree: Bool, animalFour:
         .offset(y: 325)
      
  }
+
+
+//func animalSelection(animalOne: Bool, animalTwo: Bool, animalThree: Bool, animalFour: Bool, animalFive: Bool) -> String {
+    
+    
+    
+//}
+
+
