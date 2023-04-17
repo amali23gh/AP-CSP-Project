@@ -11,7 +11,7 @@ struct DecisionBox: View {
     
     var animalName: String
     var color: Color
-  //  var offset: CGFloat
+ 
     
     var body: some View {
         

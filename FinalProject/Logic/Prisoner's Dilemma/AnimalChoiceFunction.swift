@@ -24,11 +24,9 @@ func AnimalPage(animalOne: Bool, animalTwo: Bool, animalThree: Bool, animalFour:
     
     if  animalOne && animalTwo == true || animalOne && animalThree == true || animalOne && animalFour == true || animalOne && animalFive == true || animalTwo && animalThree == true || animalTwo && animalFour == true || animalTwo && animalFive == true || animalThree && animalFour == true || animalThree && animalFive == true || animalFour && animalFive == true {
         
-        return
-                ButtonComponent(text: "Next")
-                    .offset(y: 325)
-                
-           
+        return AnimalProbView()
+      
+    
     } else if animalOne == true || animalTwo == true || animalThree == true || animalFour == true || animalFive == true {
         
         return
