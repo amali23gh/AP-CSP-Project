@@ -22,7 +22,7 @@ struct SingleTraitSimulation: View {
             ZStack{
                 VStack{
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 80)
                     ScrollView(.horizontal){
                         Spacer()
                             .frame(height: 10)
@@ -146,18 +146,19 @@ struct SingleTraitSimulation: View {
                         }
                     
                 }
-                .frame(width:400, height: 440)
+                .frame(width:400, height: 480)
                 .background(Color(red: 0.90, green: 0.80, blue: 0.84))
                 .offset(y:-240)
                 .ignoresSafeArea()
                 
                 GenenomeView(pop: population,hight: 380)
-                    .offset(y:170)
+                    .offset(y:190)
                 
                 if population.count > 0{
                     Text("Population: \(population.count) ")
-                        .offset( y:-34)
+                        .offset( y:-12)
                 }
+                /*
                 NavigationLink(destination: ContentView()){
                     Text("back")
                     .ignoresSafeArea()
@@ -169,9 +170,9 @@ struct SingleTraitSimulation: View {
                 .background(Color(red: 0.99, green: 0.96, blue: 0.84))
                 .cornerRadius(10)
                 .offset(x:-150, y:380)
+                */
             }
         }
-        .navigationBarBackButtonHidden()
     }
 }
 
