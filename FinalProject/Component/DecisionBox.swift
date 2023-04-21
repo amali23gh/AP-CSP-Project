@@ -34,11 +34,10 @@ struct DecisionBox: View {
             
            
         }
-       .frame(width: 175, height: 150)
+       .frame(width: 150, height: 150)
        .padding(5)
        .background(color)
        .cornerRadius(15)
-       .shadow(radius: 15)
     }
 }
 

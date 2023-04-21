@@ -8,7 +8,7 @@
 import Foundation
 
 
-func animalChance() -> [Int] {
+func animalChance() {
     
     
     var animalProb:[[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: 5)
@@ -24,7 +24,5 @@ func animalChance() -> [Int] {
     Prob.hyenaProb = animalProb[3]
     Prob.vultureProb = animalProb[4]
     
-    
-    return Prob.meerkatProb
-    
+
 }

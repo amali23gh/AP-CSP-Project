@@ -9,12 +9,13 @@ import Foundation
 
 
 struct Prob {
-    
+    static var animalList: [String] = ["Zebra","Lion","Meerkat","Vulture","Hyena"]
     static var meerkatProb: [Int] = []
     static var lionProb: [Int] = []
     static var zebraProb: [Int] = []
     static var hyenaProb: [Int] = []
     static var vultureProb: [Int] = []
+    static var animalPick: [Int] = [0,0]
     static var meerkatBool: Bool = false
     static var lionBool: Bool = false
     static var zebraBool: Bool = false

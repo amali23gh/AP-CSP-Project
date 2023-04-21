@@ -16,7 +16,6 @@ func  AnimalBoxColor(color: Bool) -> Color {
         return .yellow
     } else {
         return .gray
-        
     }
 } 
 

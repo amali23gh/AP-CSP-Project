@@ -9,70 +9,59 @@ import SwiftUI
 
 struct AnimalChoice: View {
     
-    
-    @State var zebraBool: Bool = Prob.meerkatBool
-    @State var lionBool: Bool = Prob.lionBool
-    @State var vultureBool: Bool = Prob.vultureBool
-    @State var meerkatBool: Bool = Prob.meerkatBool
-    @State var hyenaBool: Bool = Prob.hyenaBool
-    
-    
-   
-    
-        var body: some View {
-          
+    @State var boxColors: [Bool] = Array(repeating: false, count: 5)
+    var body: some View {
+        
+        ZStack {
             
             
-    
-              
-                ZStack {
-                    
-                   
-                      
-                    
-                    VStack{
-                        Text("Animal Selection")
-                            .font(.title)
-                            .fontWeight(.bold)
-                        
-                        HStack {
-                            DecisionBox(animalName: "Zebra", color: AnimalBoxColor(color: zebraBool))
-                                .onTapGesture {
-                                    zebraBool.toggle()
-                                }
-                            
-                            DecisionBox(animalName: "Lion", color: AnimalBoxColor(color: lionBool))
-                                .onTapGesture {
-                                    lionBool.toggle()
-                                }
-                        }
-                        HStack {
-                            DecisionBox(animalName: "Vulture", color: AnimalBoxColor(color: vultureBool))
-                                .onTapGesture {
-                                    vultureBool.toggle()
-                                }
-                            DecisionBox(animalName: "Meerkat", color: AnimalBoxColor(color: meerkatBool))
-                                .onTapGesture {
-                                    meerkatBool.toggle()
-                                }
-                        }
-                        HStack  {
-                            DecisionBox(animalName: "Hyena", color: AnimalBoxColor(color: hyenaBool))
-                                .onTapGesture {
-                                    hyenaBool.toggle()
+            
+            
+            VStack{
+                Text("Animal Selection")
+                    .font(.title)
+                    .fontWeight(.bold)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 20) {
+                    ForEach ((0 ... Prob.animalList.count-1), id: \.self){ i in
+                        DecisionBox(animalName: Prob.animalList[i], color: AnimalBoxColor(color: boxColors[i]))
+                            .onTapGesture{
+                                if Prob.animalPick[0] == 0 {
+                                    Prob.animalPick[0] = (i+1)
+                                    boxColors[i].toggle()
+                                }else if Prob.animalPick[1] == 0{
+                                    Prob.animalPick[1] = (i+1)
+                                    boxColors[i].toggle()
+                                }else{
+                                    Prob.animalPick[0]
                                 }
                             }
-                        }
-                    
-                    AnimalPage(animalOne: zebraBool, animalTwo: lionBool, animalThree: vultureBool, animalFour: meerkatBool, animalFive: hyenaBool)
+                    }
+
+
+                }
+                .padding(.horizontal)
+                if Prob.animalPick[0] == 0{
+                    Text("Select Animal")
+                } else{
+                    Text(Prob.animalList[Prob.animalPick[0]-1])
+                }
+                if Prob.animalPick[1] == 0{
+                    Text("Select Animal")
+                } else{
+                    Text(Prob.animalList[Prob.animalPick[1]-1])
+                }
+
+                
+            }
+            .shadow(radius: 3, x: -3,y:4)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding()
+        .ignoresSafeArea()
+        .background(Color(red: 0.91, green: 0.76, blue: 0.66))
                 
                     
-                } .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .padding()
-                    .ignoresSafeArea()
-                    .background(Color(red: 0.91, green: 0.76, blue: 0.66))
             }
-            
         }
     
     
