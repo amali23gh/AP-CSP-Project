@@ -10,19 +10,26 @@ import SwiftUI
 struct AnimalChoice: View {
     
     
-    
     @State var zebraBool: Bool = Prob.meerkatBool
     @State var lionBool: Bool = Prob.lionBool
     @State var vultureBool: Bool = Prob.vultureBool
     @State var meerkatBool: Bool = Prob.meerkatBool
     @State var hyenaBool: Bool = Prob.hyenaBool
     
-        
+    
+   
+    
         var body: some View {
           
-            NavigationView {
+            
+            
+    
               
                 ZStack {
+                    
+                   
+                      
+                    
                     VStack{
                         Text("Animal Selection")
                             .font(.title)
@@ -54,12 +61,11 @@ struct AnimalChoice: View {
                                 .onTapGesture {
                                     hyenaBool.toggle()
                                 }
+                            }
                         }
-                    }
                     
-                    
-                    AnimalPage(animalOne: zebraBool, animalTwo: lionBool, animalThree: hyenaBool, animalFour: vultureBool, animalFive: meerkatBool)
-                    
+                    AnimalPage(animalOne: zebraBool, animalTwo: lionBool, animalThree: vultureBool, animalFour: meerkatBool, animalFive: hyenaBool)
+                
                     
                 } .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding()
@@ -68,7 +74,7 @@ struct AnimalChoice: View {
             }
             
         }
-    }
+    
     
     struct AnimalChoice_Previews: PreviewProvider {
         static var previews: some View {

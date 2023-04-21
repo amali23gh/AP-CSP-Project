@@ -16,13 +16,31 @@ struct AnimalProbView: View {
     @State var vultureProb: [Int] = Prob.vultureProb
     
     
+    
+    
     var body: some View {
-       
+        
+        animalSelection(animalOne: Prob.meerkatBool, animalTwo: Prob.lionBool, animalThree: Prob.zebraBool, animalFour: Prob.hyenaBool, animalFive: Prob.vultureBool)
+        
         NavigationView {
           
             ZStack {
               
                 VStack {
+                    
+                    Text("Animals Selected:")
+            
+                    
+                    HStack {
+                        Text(Prob.animalOne)
+                        Text(Prob.animalTwo)
+                    }
+                    
+                    HStack {
+                        Image(Prob.animalOne)
+                        Image(Prob.animalTwo)
+                        }
+                    
                    
                     HStack {
                         DecisionBoxTwo(offsetVal: CGSize(width: -5, height: 0))

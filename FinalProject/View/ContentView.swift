@@ -80,7 +80,7 @@ struct ContentView: View {
                                             simulationPD.toggle()
                                         }
                                     if simulationPD == true {
-                                        Text(" - Simulates game theory princeples in nature")
+                                        Text(" - Simulates game theory principles in nature")
                                             .multilineTextAlignment(.center)
                                         
                                         NavigationLink(destination: AnimalChoice()){
@@ -103,7 +103,7 @@ struct ContentView: View {
                                         }
                                             
                                         
-                                        Text("DNA Buidler")
+                                        Text("DNA Builder")
                                             .font(.title2)
                                             .foregroundColor(.black)
                                     }
