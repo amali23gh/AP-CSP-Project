@@ -18,11 +18,11 @@ func animalChance() {
         animalProb[index][1] = 100 - animalProb[index][0]
     }
     
-    Prob.meerkatProb = animalProb[0]
-    Prob.zebraProb = animalProb[1]
-    Prob.lionProb = animalProb[2]
-    Prob.hyenaProb = animalProb[3]
-    Prob.vultureProb = animalProb[4]
+//    Prob.meerkatProb = animalProb[0]
+//    Prob.zebraProb = animalProb[1]
+//    Prob.lionProb = animalProb[2]
+//    Prob.hyenaProb = animalProb[3]
+//    Prob.vultureProb = animalProb[4]
     
 
 }

@@ -29,6 +29,7 @@
 		FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42929BB7C05009D049B /* ContentView.swift */; };
 		FB78F42C29BB7C07009D049B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB78F42B29BB7C07009D049B /* Assets.xcassets */; };
 		FB78F42F29BB7C07009D049B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB78F42E29BB7C07009D049B /* Preview Assets.xcassets */; };
+		FBDB32A329F4B787002787A5 /* AnimalProbViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB32A229F4B787002787A5 /* AnimalProbViewTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		FB78F42929BB7C05009D049B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB78F42B29BB7C07009D049B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB78F42E29BB7C07009D049B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBDB32A229F4B787002787A5 /* AnimalProbViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalProbViewTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */,
-				FB2BD84729BF5F320094A460 /* Prisoner's Dilemma */,
+				FB2BD84729BF5F320094A460 /* Animal's Dilemma */,
 				A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */,
 				A62AB6B629ED9D1A000ABF31 /* DNAbuilder */,
 			);
@@ -94,6 +96,7 @@
 				FB2BD84C29C003870094A460 /* AnimalChoice.swift */,
 				FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */,
 				A62AB6B429ED9030000ABF31 /* DNAbuilder.swift */,
+				FBDB32A229F4B787002787A5 /* AnimalProbViewTwo.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		FB2BD84729BF5F320094A460 /* Prisoner's Dilemma */ = {
+		FB2BD84729BF5F320094A460 /* Animal's Dilemma */ = {
 			isa = PBXGroup;
 			children = (
 				FB7536DA29DA1E330012E5C6 /* AnimalDecisionProbability.swift */,
@@ -136,7 +139,7 @@
 				FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */,
 				FB7536E229DA76D30012E5C6 /* AnimalChoiceFunction.swift */,
 			);
-			path = "Prisoner's Dilemma";
+			path = "Animal's Dilemma";
 			sourceTree = "<group>";
 		};
 		FB78F41B29BB7C05009D049B = {
@@ -266,6 +269,7 @@
 				FB2BD84229BBB25F0094A460 /* ButtonComponent .swift in Sources */,
 				FB2BD84D29C003870094A460 /* AnimalChoice.swift in Sources */,
 				A63F2E5029BBBB1C0075DC84 /* Suffix.swift in Sources */,
+				FBDB32A329F4B787002787A5 /* AnimalProbViewTwo.swift in Sources */,
 				FB7536E729DCC9050012E5C6 /* AnimalProbView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

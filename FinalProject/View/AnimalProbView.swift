@@ -9,48 +9,26 @@ import SwiftUI
 
 struct AnimalProbView: View {
     
-    @State var meerkatProb: [Int] = Prob.meerkatProb
-    @State var zebraProb: [Int] = Prob.zebraProb
-    @State var lionProb: [Int] = Prob.lionProb
-    @State var hyenaProb: [Int] = Prob.lionProb
-    @State var vultureProb: [Int] = Prob.vultureProb
-    
-    
     
     
     var body: some View {
         
-        animalSelection(animalOne: Prob.meerkatBool, animalTwo: Prob.lionBool, animalThree: Prob.zebraBool, animalFour: Prob.hyenaBool, animalFive: Prob.vultureBool)
         
         NavigationView {
-          
-            ZStack {
-              
-                VStack {
+            ZStack { 
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 500))], spacing: 20) {
+                ForEach ((0...Prob.animalPick.count - 1), id: \.self){ i in
+                    Image(Prob.animalList[Prob.animalPick[i]-1])
+                    Text("Probability that the \(Prob.animalList[Prob.animalPick[i]-1]) will share food is: \(Prob.animalProb[Prob.animalPick[i]-1])%")
                     
-                    Text("Animals Selected:")
-            
                     
-                    HStack {
-                        Text(Prob.animalOne)
-                        Text(Prob.animalTwo)
-                    }
-                    
-                    HStack {
-                        Image(Prob.animalOne)
-                        Image(Prob.animalTwo)
-                        }
-                    
-                   
-                    HStack {
-                        DecisionBoxTwo(offsetVal: CGSize(width: -5, height: 0))
-                        DecisionBoxTwo(offsetVal: CGSize(width:  5, height: 0))
-                    }
-                   
-                    HStack {
-                        DecisionBoxTwo(offsetVal: CGSize(width: -5, height: 10))
-                        DecisionBoxTwo(offsetVal: CGSize(width:  5, height: 10))
-                    }
+                }
+                NavigationLink(destination: AnimalProbViewTwo()){
+                    ButtonComponent(text: "Simulate Event")
+                }
+                
+                
+             
                     
                     
                     
@@ -59,13 +37,15 @@ struct AnimalProbView: View {
             } .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding()
                 .ignoresSafeArea()
-                .background(.white)
-        }
+                .background(Color(red: 0.91, green: 0.76, blue: 0.66))
+            
+        } .navigationBarBackButtonHidden()
     }
-}
-
-struct AnimalProbView_Previews: PreviewProvider {
-    static var previews: some View {
-        AnimalProbView()
+    
+    
+    struct AnimalProbView_Previews: PreviewProvider {
+        static var previews: some View {
+            AnimalProbView()
+        }
     }
 }

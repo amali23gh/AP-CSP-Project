@@ -70,7 +70,7 @@ struct ContentView: View {
                                         }
                                             
                                         
-                                        Text("Prisoner's Dilemma")
+                                        Text("Animal's Dilemma")
                                             .font(.title2)
                                             .foregroundColor(.black)
                                     }

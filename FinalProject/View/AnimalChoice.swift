@@ -65,7 +65,7 @@ struct AnimalChoice: View {
             .ignoresSafeArea()
             .background(Color(red: 0.91, green: 0.76, blue: 0.66))
             
-        }
+        } .navigationBarBackButtonHidden()
     }
 }
     
