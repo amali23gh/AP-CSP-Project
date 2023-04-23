@@ -13,6 +13,7 @@ struct AnimalProbView: View {
     
     var body: some View {
         
+        animalChance()
         
         NavigationView {
             ZStack { 
@@ -49,3 +50,5 @@ struct AnimalProbView: View {
         }
     }
 }
+
+

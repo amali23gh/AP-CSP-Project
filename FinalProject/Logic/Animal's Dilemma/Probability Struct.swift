@@ -14,5 +14,4 @@ struct Prob {
     static var animalShare: [Int] = [0,0]
     static var animalPick: [Int] = [0,0]
     static var result: String = " "
-    static var boxColors: [Bool] = [false, false, false, false, false]
-}
+    }

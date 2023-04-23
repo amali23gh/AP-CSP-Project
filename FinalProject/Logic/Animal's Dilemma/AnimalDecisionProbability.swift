@@ -6,23 +6,25 @@
 //
 
 import Foundation
+import SwiftUI
 
-
-func animalChance() {
+func animalChance() -> some View {
     
     
-    var animalProb:[[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: 5)
+    var animalProb:[Int] = Array(repeating: 0, count: 5)
     
     for index in 0...animalProb.count - 1 {
-        animalProb[index][0] = Int.random(in: 0 ... 100)
-        animalProb[index][1] = 100 - animalProb[index][0]
+        animalProb[index] = Int.random(in: 0 ... 100)
     }
     
-//    Prob.meerkatProb = animalProb[0]
-//    Prob.zebraProb = animalProb[1]
-//    Prob.lionProb = animalProb[2]
-//    Prob.hyenaProb = animalProb[3]
-//    Prob.vultureProb = animalProb[4]
+    Prob.animalProb[0] = animalProb[0]
+    Prob.animalProb[1] = animalProb[1]
+    Prob.animalProb[2] = animalProb[2]
+    Prob.animalProb[3] = animalProb[3]
+    Prob.animalProb[4] = animalProb[4]
     
 
+    return EmptyView()
+    
 }
+
