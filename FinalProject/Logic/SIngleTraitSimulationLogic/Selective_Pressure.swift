@@ -1,9 +1,4 @@
-//
-//  Selective_Pressure.swift
-//  FinalProject
-//
-//  Created by Theo Fechtmeyer23 on 3/12/23.
-//
+
 
 import Foundation
 

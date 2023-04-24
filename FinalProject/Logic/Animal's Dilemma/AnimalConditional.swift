@@ -1,9 +1,4 @@
-//
-//  AnimalChoice.swift
-//  FinalProject
-//
-//  Created by Adam Ali23 on 4/2/23.
-//
+
 
 import Foundation
 import SwiftUI

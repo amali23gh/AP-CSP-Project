@@ -1,9 +1,4 @@
-//
-//  boxColorLog.swift
-//  FinalProject
-//
-//  Created by Theo Fechtmeyer23 on 4/24/23.
-//
+
 
 import Foundation
 func boxColor() -> [Bool]{

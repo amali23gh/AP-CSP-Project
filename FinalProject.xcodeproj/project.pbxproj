@@ -23,7 +23,6 @@
 		FB7536DF29DA3CDE0012E5C6 /* AnimalConditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */; };
 		FB7536E129DA3E2F0012E5C6 /* Probability Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */; };
 		FB7536E729DCC9050012E5C6 /* AnimalProbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */; };
-		FB7536F829ECBB070012E5C6 /* DecisionBoxTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7536F729ECBB070012E5C6 /* DecisionBoxTwo.swift */; };
 		FB78F42829BB7C05009D049B /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42729BB7C05009D049B /* FinalProjectApp.swift */; };
 		FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F42929BB7C05009D049B /* ContentView.swift */; };
 		FB78F42C29BB7C07009D049B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB78F42B29BB7C07009D049B /* Assets.xcassets */; };
@@ -48,7 +47,6 @@
 		FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalConditional.swift; sourceTree = "<group>"; };
 		FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Probability Struct.swift"; sourceTree = "<group>"; };
 		FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalProbView.swift; sourceTree = "<group>"; };
-		FB7536F729ECBB070012E5C6 /* DecisionBoxTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionBoxTwo.swift; sourceTree = "<group>"; };
 		FB78F42429BB7C05009D049B /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB78F42729BB7C05009D049B /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		FB78F42929BB7C05009D049B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */,
 				A63F2E4729BBA0DC0075DC84 /* GenenomeView.swift */,
 				FB2BD84A29BF5FA00094A460 /* DecisionBox.swift */,
-				FB7536F729ECBB070012E5C6 /* DecisionBoxTwo.swift */,
 				A62AB6B729ED9D70000ABF31 /* DNAview53.swift */,
 			);
 			path = Component;
@@ -238,7 +235,6 @@
 				FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */,
 				A62AB6B829ED9D70000ABF31 /* DNAview53.swift in Sources */,
 				FB2BD84B29BF5FA00094A460 /* DecisionBox.swift in Sources */,
-				FB7536F829ECBB070012E5C6 /* DecisionBoxTwo.swift in Sources */,
 				A63F2E4829BBA0DC0075DC84 /* GenenomeView.swift in Sources */,
 				A63F2E4129BB86B90075DC84 /* RandomPopCreator.swift in Sources */,
 				A63F2E5829BED85E0075DC84 /* Selective_Pressure.swift in Sources */,

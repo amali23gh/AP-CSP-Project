@@ -1,9 +1,3 @@
-//
-//  DNAveiw53.swift
-//  FinalProject
-//
-//  Created by Theo Fechtmeyer23 on 4/17/23.
-//
 
 import SwiftUI
 

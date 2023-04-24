@@ -1,9 +1,4 @@
-//
-//  AnimalProbView.swift
-//  FinalProject
-//
-//  Created by Adam Ali23 on 4/4/23.
-//
+
 
 import SwiftUI
 
