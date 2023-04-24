@@ -43,4 +43,11 @@ func animalChoice() -> some View{
         return Text("Error")
     }
     
-
+func  AnimalBoxColor(color: Bool) -> Color {
+    
+    if color == true {
+        return .yellow
+    } else {
+        return .gray
+    }
+} 

@@ -13,8 +13,6 @@ struct AnimalProbView: View {
     
     var body: some View {
         
-        animalChance()
-        
         NavigationView {
             ZStack { 
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 500))], spacing: 20) {

@@ -27,13 +27,10 @@ struct AnimalProbViewTwo: View {
                 
                 animalChoice()
                 
-                
                 NavigationLink(destination: AnimalChoice()) {
                     ButtonComponent(text: "Simulate Another Pair")
                        
                 }
-                
-                
                 
                 NavigationLink(destination: ContentView()) {
                     ButtonComponent(text: "Return to Home Page")
