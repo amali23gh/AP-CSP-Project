@@ -16,6 +16,7 @@
 		A63F2E4C29BBB5980075DC84 /* SingleTraitSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */; };
 		A63F2E5029BBBB1C0075DC84 /* Suffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */; };
 		A63F2E5829BED85E0075DC84 /* Selective_Pressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F2E5729BED85E0075DC84 /* Selective_Pressure.swift */; };
+		A67DA7B029F6C89D0070C004 /* boxColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DA7AF29F6C89D0070C004 /* boxColorLog.swift */; };
 		FB2BD84229BBB25F0094A460 /* ButtonComponent .swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */; };
 		FB2BD84B29BF5FA00094A460 /* DecisionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84A29BF5FA00094A460 /* DecisionBox.swift */; };
 		FB2BD84D29C003870094A460 /* AnimalChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BD84C29C003870094A460 /* AnimalChoice.swift */; };
@@ -40,6 +41,7 @@
 		A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTraitSimulation.swift; sourceTree = "<group>"; };
 		A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suffix.swift; sourceTree = "<group>"; };
 		A63F2E5729BED85E0075DC84 /* Selective_Pressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selective_Pressure.swift; sourceTree = "<group>"; };
+		A67DA7AF29F6C89D0070C004 /* boxColorLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxColorLog.swift; sourceTree = "<group>"; };
 		FB2BD84129BBB25F0094A460 /* ButtonComponent .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonComponent .swift"; sourceTree = "<group>"; };
 		FB2BD84A29BF5FA00094A460 /* DecisionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionBox.swift; sourceTree = "<group>"; };
 		FB2BD84C29C003870094A460 /* AnimalChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalChoice.swift; sourceTree = "<group>"; };
@@ -66,20 +68,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A62AB6B629ED9D1A000ABF31 /* DNAbuilder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DNAbuilder;
-			sourceTree = "<group>";
-		};
 		A63F2E2529BB7DCA0075DC84 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
 				A63F2E4F29BBBB1C0075DC84 /* Suffix.swift */,
 				FB2BD84729BF5F320094A460 /* Animal's Dilemma */,
 				A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */,
-				A62AB6B629ED9D1A000ABF31 /* DNAbuilder */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -91,17 +85,10 @@
 				A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */,
 				FB2BD84C29C003870094A460 /* AnimalChoice.swift */,
 				FB7536E629DCC9050012E5C6 /* AnimalProbView.swift */,
-				A62AB6B429ED9030000ABF31 /* DNAbuilder.swift */,
 				FBDB32A229F4B787002787A5 /* AnimalProbViewTwo.swift */,
+				A62AB6B429ED9030000ABF31 /* DNAbuilder.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A63F2E2729BB7DEE0075DC84 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */ = {
@@ -132,6 +119,7 @@
 			children = (
 				FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */,
 				FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */,
+				A67DA7AF29F6C89D0070C004 /* boxColorLog.swift */,
 			);
 			path = "Animal's Dilemma";
 			sourceTree = "<group>";
@@ -157,7 +145,6 @@
 			children = (
 				FB78F42729BB7C05009D049B /* FinalProjectApp.swift */,
 				FB2BD84029BBB24A0094A460 /* Component */,
-				A63F2E2729BB7DEE0075DC84 /* Models */,
 				A63F2E2629BB7DD90075DC84 /* View */,
 				A63F2E2529BB7DCA0075DC84 /* Logic */,
 				FB78F42B29BB7C07009D049B /* Assets.xcassets */,
@@ -246,6 +233,7 @@
 			files = (
 				A63F2E4529BB9E5E0075DC84 /* GeneImageSelect.swift in Sources */,
 				A63F2E4C29BBB5980075DC84 /* SingleTraitSimulation.swift in Sources */,
+				A67DA7B029F6C89D0070C004 /* boxColorLog.swift in Sources */,
 				FB7536E129DA3E2F0012E5C6 /* Probability Struct.swift in Sources */,
 				FB78F42A29BB7C05009D049B /* ContentView.swift in Sources */,
 				A62AB6B829ED9D70000ABF31 /* DNAview53.swift in Sources */,

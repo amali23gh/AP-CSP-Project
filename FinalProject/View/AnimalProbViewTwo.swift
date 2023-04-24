@@ -29,14 +29,15 @@ struct AnimalProbViewTwo: View {
                 
                 NavigationLink(destination: AnimalChoice()) {
                     ButtonComponent(text: "Simulate Another Pair")
-                       
+                }
+                .onTapGesture {
+                    Prob.animalPick = [0,0]
                 }
                 
                 NavigationLink(destination: ContentView()) {
                     ButtonComponent(text: "Return to Home Page")
                       
                 }
-                
                 
             }
         } .navigationBarBackButtonHidden()

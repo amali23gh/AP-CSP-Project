@@ -9,7 +9,9 @@ import SwiftUI
 
 struct AnimalChoice: View {
     
-    @State var boxColors: [Bool] = Array(repeating: false, count: 5)
+    @State var boxColors: [Bool] = boxColor()
+    
+
     var body: some View {
         NavigationView{
             ZStack {
