@@ -13,19 +13,14 @@ struct AnimalProbView: View {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 500))], spacing: 20) {
                 ForEach ((0...Prob.animalPick.count - 1), id: \.self){ i in
                     Image(Prob.animalList[Prob.animalPick[i]-1])
-                    Text("Probability that the \(Prob.animalList[Prob.animalPick[i]-1]) will share food is: \(Prob.animalProb[Prob.animalPick[i]-1])%")
+                    Text("Probability that the \(Prob.animalList[Prob.animalPick[i]-1]) will share food is: \(Prob.animalProb[Prob.animalPick[i]-1])% with the other animal.")
                     
                     
                 }
                 NavigationLink(destination: AnimalProbViewTwo()){
                     ButtonComponent(text: "Simulate Event")
                 }
-                
-                
-             
-                    
-                    
-                    
+            
                 }
                 
             } .frame(maxWidth: .infinity, maxHeight: .infinity)

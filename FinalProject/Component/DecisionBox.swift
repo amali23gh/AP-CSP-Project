@@ -12,8 +12,6 @@ struct DecisionBox: View {
         
        ZStack {
            
-       
-      
            Text(animalName)
                .frame(width:100,height:20)
                 .offset(y: -65)
