@@ -4,11 +4,13 @@ import SwiftUI
 
 struct AnimalChoice: View {
     
-    //Hyena Image: https://easydrawingart.com/how-to-draw-a-hyena/
-    //Vulture Image: https://easydrawingart.com/how-to-draw-a-vulture/
-    //Lion Image: https://easydrawingguides.com/how-to-draw-a-lion/
-    //Meerkat Image: https://helloartsy.com/how-to-draw-a-meerkat/
-    //Zebra Image: https://www.wikihow.com/Draw-a-Zebra
+    // View File Name: AnimalChoice
+    
+    // Hyena Image Source: https://easydrawingart.com/how-to-draw-a-hyena/
+    // Vulture Image Source: https://easydrawingart.com/how-to-draw-a-vulture/
+    // Lion Image Source: https://easydrawingguides.com/how-to-draw-a-lion/
+    // Meerkat Image Source: https://helloartsy.com/how-to-draw-a-meerkat/
+    // Zebra Image Source: https://www.wikihow.com/Draw-a-Zebra
     
     @State var boxColors: [Bool] = boxColor()
     

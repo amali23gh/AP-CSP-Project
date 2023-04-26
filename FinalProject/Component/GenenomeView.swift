@@ -2,6 +2,8 @@
 
 import SwiftUI
 
+// Component File Name: GeneomeView 
+
 struct GenenomeView: View {
     let pop: [[Int]]
     let hight: CGFloat

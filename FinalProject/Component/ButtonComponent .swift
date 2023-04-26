@@ -1,6 +1,8 @@
 
 import SwiftUI
 
+//Component File Name: Button Component
+
 struct ButtonComponent: View {
     var text: String
     var background: Color  = Color(red: 0.99, green: 0.96, blue: 0.84)

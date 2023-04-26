@@ -2,6 +2,10 @@
 
 import SwiftUI
 
+// Component File Name: Decision Box
+
+// Zebra Image: https://www.wikihow.com/Draw-a-Zebra
+
 struct DecisionBox: View {
     
     var animalName: String

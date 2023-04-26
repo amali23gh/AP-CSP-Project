@@ -2,6 +2,8 @@
 
 import SwiftUI
 
+// View File Name: Single Trait Simulation
+
 struct SingleTraitSimulation: View {
     @State var genNum: Int = 0
     @State var startNum: Int = 0

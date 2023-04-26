@@ -2,6 +2,8 @@
 
 import Foundation
 
+    // Logic File Name: Selective_Pressure (for SingleTraitSimulation)
+
 func SelectivePresure(pop:[[Int]],domSurvive: Int ,recSurvive: Int ,carrySurvive: Int) -> [[Int]]{
     var newPop: [[Int]] = pop
     for i in 0 ...  newPop.count-1{

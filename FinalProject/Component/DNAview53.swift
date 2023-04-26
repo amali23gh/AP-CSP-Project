@@ -1,7 +1,12 @@
 
 import SwiftUI
 
-struct DNAveiw53: View {
+struct DNAview53: View {
+    
+    // Component File Name: DNAView53
+    
+    // All Assets used in DNA View were developed by my partner
+    
     var size: CGFloat
     var DNAseq: String
     var body: some View{
@@ -65,6 +70,6 @@ struct DNAveiw53: View {
 
 struct DNAveiw53_Previews: PreviewProvider {
     static var previews: some View {
-        DNAveiw53(size: 4, DNAseq: "Atgtgtgtacac")
+        DNAview53(size: 4, DNAseq: "Atgtgtgtacac")
     }
 }

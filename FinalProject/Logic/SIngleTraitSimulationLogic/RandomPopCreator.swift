@@ -1,6 +1,9 @@
 
 
 import Foundation
+
+// Logic File Name: RandomPopCreator (for SingleTraitSimulation)
+
 func RandomPopCreator(size:Int) -> [[Int]]{
     // learing how to creating 2D array https://stackoverflow.com/questions/25127700/two-dimensional-array-in-swift
     var popGeneA:[[Int]] = Array(repeating: Array(repeating: 0, count: 3), count: size)

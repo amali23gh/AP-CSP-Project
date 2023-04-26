@@ -2,6 +2,7 @@
 
 import Foundation
 
+// Logic File Name: Probability Struct (for Animal's Dliemma)
 
 struct Prob {
     static var animalList: [String] = ["Zebra","Lion","Meerkat","Vulture","Hyena"]

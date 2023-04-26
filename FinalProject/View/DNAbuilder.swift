@@ -3,6 +3,9 @@
 import SwiftUI
 
 struct DNAbuilder: View {
+    
+    // View File Name: DNAbuilder
+    
     @State var DNAseq: String = ""
     var body: some View {
         NavigationView{
@@ -22,7 +25,7 @@ struct DNAbuilder: View {
                                 "AmericanTypewriter",
                                 fixedSize: 20))
                         ScrollView(.horizontal){
-                            DNAveiw53(size: 5, DNAseq: DNAseq)
+                            DNAview53(size: 5, DNAseq: DNAseq)
                             
                         }
                         .frame(width: .infinity, height: 100)

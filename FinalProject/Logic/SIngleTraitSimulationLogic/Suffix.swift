@@ -2,6 +2,8 @@
 
 import Foundation
 
+// Logic File Name: Suffix (for SingleTraitSimulation)
+
 func Suffix(num: Int) -> String{
     if num == 1{
         return "st"

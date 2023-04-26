@@ -1,6 +1,8 @@
 
 import Foundation
 
+// Logic File Name: NextGeneration (for SingleTraitSimulation)
+
 func NextGen(startPop: [[Int]], fertility: Int, monogamy: Bool, numOfKid: Int) -> [[Int]]{
     var malePop: [[Int]] = []
     var femalePop: [[Int]] = []

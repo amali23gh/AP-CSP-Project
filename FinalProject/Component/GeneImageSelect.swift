@@ -1,6 +1,8 @@
 
 import SwiftUI
 
+// Component File Name: GeneImageSelect 
+
 struct GeneImageSelect: View {
     let person: [Int]
     var body: some View {

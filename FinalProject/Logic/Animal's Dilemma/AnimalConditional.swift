@@ -3,6 +3,7 @@
 import Foundation
 import SwiftUI
 
+// Logic File Name: animalConditional (for Animal's Dliemma)
 
 func animalChoice() -> some View {
     
@@ -58,3 +59,11 @@ func animalChoice() -> some View {
     }
     
 
+func boxColor() -> [Bool]{
+    var boxColors: [Bool] = Array(repeating: false, count: 5)
+    if Prob.animalPick[0] != 0 && Prob.animalPick[1] != 0{
+        boxColors[Prob.animalPick[0]-1] = true
+        boxColors[Prob.animalPick[1]-1] = true
+    }
+    return boxColors
+}

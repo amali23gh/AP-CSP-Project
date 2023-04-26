@@ -4,6 +4,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // View File Name: ContentView (Title Page)
+    
     @State var simulationStart: Bool = false
     @State var simulationSTS: Bool = false
     @State var simulationPD: Bool = false
