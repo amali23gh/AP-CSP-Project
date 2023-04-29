@@ -5,17 +5,19 @@ import SwiftUI
 
 // Logic File Name: animalConditional (for Animal's Dliemma)
 
-func animalChoice() -> some View {
+
+
+func animalChoice(list: [Int]) -> some View {
     
     
     var animalShare: [Bool] = [false, false]
     
-    for i in 0...Prob.animalPick.count - 1 {
+    for i in 0...list.count - 1 {
         
-        let number = Int.random(in: 0...100)
+        let number = Int.random(in: 1...100)
     
         
-        if number <= Prob.animalProb[Prob.animalPick[i]-1]{
+        if number <= Prob.animalProb[list[i]-1]{
             animalShare[i] = true
         }
     }
@@ -32,11 +34,11 @@ func animalChoice() -> some View {
         } else if animalShare[0] == false && animalShare[1] == true {
             
                             
-                return  Text("Oh No! The Food was Taken by \(Prob.animalList[Prob.animalPick[0]-1])")
+                return  Text("Oh No! The Food was Taken by \(Prob.animalList[list[0]-1])")
                 
         } else if  animalShare[0] == true && animalShare[1] == false {
                 
-                return Text("Oh No! The Food was Taken by \(Prob.animalList[Prob.animalPick[1]-1])")
+                return Text("Oh No! The Food was Taken by \(Prob.animalList[list[1]-1])")
         }
     
     return Text("Error")
@@ -46,7 +48,6 @@ func animalChoice() -> some View {
     
     
     
-   
     
 
     func  AnimalBoxColor(color: Bool) -> Color {
@@ -60,8 +61,11 @@ func animalChoice() -> some View {
     
 
 func boxColor() -> [Bool]{
+    
     var boxColors: [Bool] = Array(repeating: false, count: 5)
+    
     if Prob.animalPick[0] != 0 && Prob.animalPick[1] != 0{
+        
         boxColors[Prob.animalPick[0]-1] = true
         boxColors[Prob.animalPick[1]-1] = true
     }

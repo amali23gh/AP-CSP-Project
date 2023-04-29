@@ -21,7 +21,7 @@ struct AnimalProbViewTwo: View {
                     
                 }
                 
-                animalChoice()
+                animalChoice(list: Prob.animalPick)
                 
                 NavigationLink(destination: AnimalChoice()) {
                     ButtonComponent(text: "Simulate Another Pair")

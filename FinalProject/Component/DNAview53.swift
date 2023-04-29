@@ -5,7 +5,6 @@ struct DNAview53: View {
     
     // Component File Name: DNAView53
     
-    // All Assets used in DNA View were developed by my partner
     
     var size: CGFloat
     var DNAseq: String
