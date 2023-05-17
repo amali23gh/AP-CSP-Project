@@ -64,18 +64,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A63F2E2529BB7DCA0075DC84 /* Logic */ = {
+		A62AD6932A14672D00AE38CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB2BD84729BF5F320094A460 /* Animal's Dilemma */,
-				A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */,
+				FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */,
 			);
-			path = Logic;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A62AD6942A14674700AE38CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A63F2E5929BED8BC0075DC84 /* SIngleTraitSimulationLogic */,
+				FB2BD84729BF5F320094A460 /* Animal's Dilemma */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A63F2E2629BB7DD90075DC84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB2BD84029BBB24A0094A460 /* Component */,
 				FB78F42929BB7C05009D049B /* ContentView.swift */,
 				A63F2E4B29BBB5980075DC84 /* SingleTraitSimulation.swift */,
 				FB2BD84C29C003870094A460 /* AnimalChoice.swift */,
@@ -113,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				FB7536DE29DA3CDE0012E5C6 /* AnimalConditional.swift */,
-				FB7536E029DA3E2F0012E5C6 /* Probability Struct.swift */,
 			);
 			path = "Animal's Dilemma";
 			sourceTree = "<group>";
@@ -138,9 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				FB78F42729BB7C05009D049B /* FinalProjectApp.swift */,
-				FB2BD84029BBB24A0094A460 /* Component */,
+				A62AD6942A14674700AE38CB /* Controller */,
 				A63F2E2629BB7DD90075DC84 /* View */,
-				A63F2E2529BB7DCA0075DC84 /* Logic */,
+				A62AD6932A14672D00AE38CB /* Model */,
 				FB78F42B29BB7C07009D049B /* Assets.xcassets */,
 				FB78F42D29BB7C07009D049B /* Preview Content */,
 			);
